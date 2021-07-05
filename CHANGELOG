@@ -1,0 +1,1 @@
+- Fixed bug when setting a 0 bit to 0 in the bitvector, it would set the bit to 0 instead.  Now it will set a 0 bit to 0 correctly.
