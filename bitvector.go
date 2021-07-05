@@ -37,7 +37,7 @@ func (Bv *Bitvector) SetBit(index uint64, value uint8) error {
 	if value == 1 {
 		Block |= 1 << BlockBitIndex
 	} else {
-		Block ^= 1 << BlockBitIndex
+		Block &= ^(1 << BlockBitIndex)
 	}
 
 	Bv.Vector[BlockIndex] = Block
